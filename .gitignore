@@ -1,0 +1,8 @@
+# User-specific, non-repository files
+makefile
+
+# Old code that is being ported over
+old
+
+# Backup files
+*~

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Talking Points</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Glen Oakley">
+    <meta name="author" content="Nicholas Vitovitch">
+    <meta name="generator" content="GNU Emacs">
+    <!-- Le styles -->
+    <link href="./assets/css/bootstrap.css" rel="stylesheet">
+    <!--<link href="./assets/css/style.css" rel="stylesheet">-->
+    <style>
+      body {
+      padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="./assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <!--
+	<link rel="shortcut icon" href="/assets/ico/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="/assets/ico/apple-touch-icon-57-precomposed.png">
+	-->
+  </head>
+
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand">Talking Points</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+	      <li class="divider-vertical"></li>
+              <li><a href="#modal_rules" role="button" data-toggle="modal">Rules</a></li>
+              <li><a href="#modal_tubes" role="button" data-toggle="modal">Tubes</a></li>
+	      <li class="divider-vertical"></li>
+            </ul>
+          </div> <!--/.nav-collapse -->
+	  <form class="navbar-form">
+	    <input id="input_nickname" type="text" class="span3" placeholder="Player Nickname" value="Nickname" />
+	  </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+
+      <!-- MODALS --->
+
+      <!-- MODAL - RULES -->
+      <div id="modal_rules" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="startup_modal_label" aria-hidden="false">
+	<div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+	  <h2 id="startup_modal_label">Rules</h2>
+	</div>
+	<div class="modal-body">
+	</div> <!-- /modal-body -->
+	<div class="modal-footer">
+	  <button class="btn btn-primary" data-dismiss="modal">___DONE___</button>
+	</div>
+      </div> <!-- /modal_rules -->
+
+      <!-- MODAL - TUBES -->
+      <div id="modal_tubes" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="startup_modal_label" aria-hidden="false">
+	<div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+	  <h2 id="startup_modal_label">Tubes</h2>
+	</div>
+	<div class="modal-body">
+	</div> <!-- /modal-body -->
+	<div class="modal-footer">
+	  <button class="btn btn-primary" data-dismiss="modal">___DONE___</button>
+	</div>
+      </div> <!-- /modal_tubes -->
+
+      <!-- /MODALS --->
+
+
+      <div class="row">
+	<div id="video" class="span7">
+	  <!-- The embed for the VIDEO -->
+	  <iframe id="frame_youtube" width="640" height="360" src="" frameborder="0"></iframe>
+	  <!-- END VIDEO EMBED -->
+	</div>
+	<div id="chat" class="span5">
+	  <iframe id="frame_chat" src="" frameborder="0"></iframe>
+	</div>
+      </div> <!-- /row -->
+      <div class="row">
+	<div id="game" class="span7">
+	  <form class="form-search" id="game_form">
+	    <input id="game_form_text" type="text" placeholder="Tag(s)...">
+	    <button type="submit" class="btn">Go</button>
+	  </form>
+	  <span id="game_time"></span>
+	  <div id="game_tags">
+	    <div id="game_tag_0" class="game_tag"></div>
+	    <div id="game_tag_1" class="game_tag"></div>
+	    <div id="game_tag_2" class="game_tag"></div>
+	    <div id="game_tag_3" class="game_tag"></div>
+	    <div id="game_tag_4" class="game_tag"></div>
+	  </div>
+	</div>
+	<div id="scores" class="span5">
+	  <div id="scores_global">
+	  </div>
+	  <div id="scores_personal">
+	  </div>
+	</div>
+      </div> <!-- /row -->
+      <footer>
+	<hr />
+	<a href="https://github.com/Purple-Dwarf-Studios/">purpledwarf</a><!--vitovitch</a> | <a href="http://glenoakley.com/">oakley</a>-->
+      </footer>
+    </div> <!-- /container -->
+    <!-- Le javascript
+	 ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="./game.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
