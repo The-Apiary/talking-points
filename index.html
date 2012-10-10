@@ -17,6 +17,7 @@
       }
     </style>
     <link href="./assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -93,13 +94,17 @@
 
 
       <div class="row">
-	<div id="video" class="span7">
+	<div class="span7">
 	  <!-- The embed for the VIDEO -->
-	  <iframe id="frame_youtube" width="640" height="360" src="" frameborder="0"></iframe>
+	  <div id="video">
+	    <iframe id="frame_tube" width="560" height="315" src="http://www.youtube.com/embed/4By8YHOnILo" frameborder="0"></iframe>
+	  </div>
 	  <!-- END VIDEO EMBED -->
 	</div>
-	<div id="chat" class="span5">
-	  <iframe id="frame_chat" src="" frameborder="0"></iframe>
+	<div class="span5">
+	  <div id="chat">
+	    <iframe id="frame_chat" width="640" height="360" src="http://glenoakley.com:8888/tlkpt" frameborder="0"></iframe>
+	  </div>
 	</div>
       </div> <!-- /row -->
       <div class="row">

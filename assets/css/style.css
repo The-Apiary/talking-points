@@ -1,12 +1,37 @@
 #video {
+    position: relative;
+    height: 0;
+    margin:0px;
     padding:0px;
+    padding-top:25px; /* FOR THE YOUTUBE BAR */
+    padding-bottom: 56.25%;
+    overflow: hidden;
 }
-#frame_youtube {
+#frame_tube {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
     margin:0px;
     padding:0px;
 }
 #chat {
+    position: relative;
+    height: 0;
     margin:0px;
+    padding:0px;
+    padding-bottom:85%;
+    overflow: hidden;
+}
+#frame_chat {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    margin:0px;
+    padding:0px;
 }
 #game {
     margin:0px;
