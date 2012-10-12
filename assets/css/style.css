@@ -4,7 +4,7 @@
     margin:0px;
     padding:0px;
     padding-top:25px; /* FOR THE YOUTUBE BAR */
-    padding-bottom: 56.25%;
+    padding-bottom: 56.25%; /* 16:9 (16/9) */
     overflow: hidden;
 }
 #frame_tube {
@@ -32,10 +32,4 @@
     height:100%;
     margin:0px;
     padding:0px;
-}
-#game {
-    margin:0px;
-}
-#scores {
-    margin:0px;
 }
